@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.czuaphe.android_iconicsdemo.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Customer View"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:id="@+id/iconicsImageView"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher"
+            app:iiv_icon="@string/gmd_sort"
+            app:iiv_size="36dp"/>
+
+        <com.mikepenz.iconics.view.IconicsButton
+            android:id="@+id/iconicsButton"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iconics{gmd-sort}Button"/>
+
+        <com.mikepenz.iconics.view.IconicsTextView
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="{gmd-ac-unit}This is a {gmd-sort}Android-Iconics"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
