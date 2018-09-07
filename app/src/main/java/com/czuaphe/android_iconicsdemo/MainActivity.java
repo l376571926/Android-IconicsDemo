@@ -2,23 +2,22 @@ package com.czuaphe.android_iconicsdemo;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.support.v4.view.LayoutInflaterCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
 import com.mikepenz.google_material_typeface_library.GoogleMaterial;
 import com.mikepenz.iconics.IconicsDrawable;
-import com.mikepenz.iconics.context.IconicsContextWrapper;
-import com.mikepenz.iconics.context.IconicsLayoutInflater;
 import com.mikepenz.iconics.typeface.IIcon;
 import com.mikepenz.iconics.view.IconicsButton;
 import com.mikepenz.iconics.view.IconicsImageView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+
 public class MainActivity extends AppCompatActivity {
 
     private IconicsButton  iconicsButton;
-    private IconicsImageView  iconicsImageView;
+    private IconicsImageView iconicsImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private IconicsDrawable getIcon(IIcon icon,  int dp, int color) {
+    private IconicsDrawable getIcon(IIcon icon, int dp, int color) {
         return new IconicsDrawable(this).icon(icon).sizeDp(dp).color(color);
     }
 
